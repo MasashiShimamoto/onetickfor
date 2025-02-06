@@ -1,4 +1,4 @@
-import { translations } from './translations.js';
+import { translations } from 'https://onetickfor.win/tradingtools/Trend-Checker-Linear-Regression/js/translations.js';
 
 document.addEventListener("DOMContentLoaded",function(){
     let params = new URLSearchParams(window.location.search);
