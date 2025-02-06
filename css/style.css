@@ -1,0 +1,25 @@
+ul {
+    list-style: none;
+    margin: 0px;
+    padding: 60px 0px;
+    text-align: center;
+}
+li {
+    color: white;
+    background-color: #999;
+    height: 80px;
+    line-height: 80px;
+}
+
+.container{
+    text-align: center;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+}
+
+.list li{
+    flex: auto;
+  }

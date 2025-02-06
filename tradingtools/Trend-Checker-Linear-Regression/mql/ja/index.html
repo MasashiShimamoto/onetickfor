@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og: https://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ONE TICK Trend Checker Linear Regression</title>
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="ONE TICK Trend Checker Linear Regression">
+    <meta name="description" content="このツールは、線形回帰と三角法を活用し、トレンドや反転ポイントを瞬時に見極めるのに役立ちます。ダウ理論やグランビルの法則のような複雑な手法に頼る必要はありません。シンプルで分かりやすく、迷わず自信を持ってトレードできるように設計されています。">
+    <meta property="og:description" content="このツールは、線形回帰と三角法を活用し、トレンドや反転ポイントを瞬時に見極めるのに役立ちます。ダウ理論やグランビルの法則のような複雑な手法に頼る必要はありません。シンプルで分かりやすく、迷わず自信を持ってトレードできるように設計されています。">
+    <meta property="og:url" content="https://massive-library-some.on-fleek.app/tradingtools/Trend-Checker-Linear-Regression/mql/ja/index.html">
+    <link rel="canonical" href="https://massive-library-some.on-fleek.app/tradingtools/Trend-Checker-Linear-Regression/mql/ja/index.html">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://massive-library-some.on-fleek.app/tradingtools/Trend-Checker-Linear-Regression/img/head/og_thumbnail.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="ONE TICK">
+    
+    <!-- Multi-language support -->
+    <link rel="alternate" hreflang="en" href="https://massive-library-some.on-fleek.app/tradingtools/Trend-Checker-Linear-Regression/mql/en/index.html">
+    <link rel="alternate" hreflang="ja" href="https://massive-library-some.on-fleek.app/tradingtools/Trend-Checker-Linear-Regression/mql/ja/index.html">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- favicon -->
+    <link rel="icon" type="image/png" sizes="192x192"  href="https://massive-library-some.on-fleek.app/img/head/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://massive-library-some.on-fleek.app/img/head/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="https://massive-library-some.on-fleek.app/img/head/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://massive-library-some.on-fleek.app/img/head/favicon/favicon-16x16.png">
+    <link rel="manifest" href="https://massive-library-some.on-fleek.app/img/head/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="https://massive-library-some.on-fleek.app/img/head/favicon/ms-icon-144x144.png">
+        
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="https://unpkg.com/destyle.css@3.0.2/destyle.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="https://massive-library-some.on-fleek.app/tradingtools/Trend-Checker-Linear-Regression/css/style.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100..700&display=swap" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css" media="print" onload="this.media='all'">
+  </head>
+
+  <body>
+    <main class="container">
+      <!-- first view -->
+      <div class="main-visual" id="top">
+        <!-- img -->
+        <picture>
+          <source srcset="/tradingtools/Trend-Checker-Linear-Regression/img/body/mv_sp.png" 
+              media="(max-width: 1024px)">
+          <img src="/tradingtools/Trend-Checker-Linear-Regression/img/body/mv.png" alt="firstview image">
+        </picture>
+        <div class="top-container">
+          <!-- top title/product name -->
+          <div class="top-title">
+            <h1>Trend Checker<br>Linear Regression</h1>
+          </div>
+          <!-- catch copy -->
+          <h2 class="copy">
+            <span class="accent-string">シンプルな</span>分析で
+            <br>トレンドを見極める
+          </h2>
+          <!-- sub catch copy -->
+          <div class="sub-copy">
+            <p>
+              このツールは、線形回帰と三角法を活用し、トレンドや反転ポイントを瞬時に見極めるのに役立ちます。
+              ダウ理論やグランビルの法則のような複雑な手法に頼る必要はありません。
+              シンプルで分かりやすく、迷わず自信を持ってトレードできるように設計されています。
+            </p>
+          </div>
+          <!-- CTA botton -->
+          <ul  class="top-btn">
+            <li>
+              <a  class="btn mt" href="https://www.mql5.com/en/market/product/128368?source=Site" target="_blank" rel="noopener noreferrer nofollow">
+                <i class="fa-solid fa-rocket"></i> MT5で始める</a>
+            </li>
+            <li>
+              <a  class="btn mt" href="https://www.mql5.com/en/market/product/128100?source=Site" target="_blank" rel="noopener noreferrer nofollow">
+                <i class="fa-solid fa-rocket"></i> MT4で始める</a>
+            </li>
+          </ul>
+        </div>
+        <!-- scroll down arrow -->
+        <div class="scroll-down">
+          <button onclick="scrollDown()">
+            <span class="scroll-down__arrow"></span>
+          </button>
+        </div>
+      </div>
+      <!-- 2nd view -->
+      <div class="parallax-img img02"></div>
+      <!-- 3rd view -->
+      <section class="thirdv">
+        <div class="thirdv-title"><h2><span class="accent-string">瞬時に</span>トレンドを見極める</h2></div>
+        <div class="thirdv-item-1">
+          <div>
+            <h3><span class="accent-string">トレンドや反転を素早く簡単に見極める</span></h3>
+            <p>このツールをトレーディングチャートに追加すると、過去の価格の動きを「線形回帰」と呼ばれる巧妙な数学的手法を使って分析します。</p>
+            <h3><span class="accent-string">価格の方向を示すカラフルなライン</span></h3>
+            <p>その後、価格の動きの方向を示すカラフルなラインを描画します。これらのラインの角度も見ることができるので、価格が上昇しているのか、下降しているのか、または横ばいなのかを瞬時に把握できます。</p>
+            <h3><span class="accent-string">トレンドの変化が簡単に理解できる</span></h3>
+            <p>一番のポイントは？ラインの色がトレンドに基づいて変わるため、何が起きているのかを簡単に理解でき、推測する必要はありません！</p>
+          </div>
+          <div class="demo-video-card-container">
+            <div class="demo-video-card">
+              <video autoplay muted loop>
+                <source src="/tradingtools/Trend-Checker-Linear-Regression/img/body/video.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+        <div class="thirdv-item-2">
+          <div class="thirdv-title"><h2>複雑なトレード技法に<span class="accent-string">さようなら</span></h2></div>
+          <p>
+            複雑なトレード技法に苦しんでいませんか？  
+            ダウ理論やエリオット波動、チャートパターンなど、どれだけ練習しても、なかなか簡単にはならないですよね？  
+            それとも、お気に入りのYouTuberみたいにチャートを分析しようとしたけれど、結局は推測で終わってしまっていませんか？  
+            バックテストはうまくいっても、実際のトレードではチャートがどんどん変わって、すべてが崩れてしまうように感じませんか？
+          </p>
+          <picture>
+            <img src="/tradingtools/Trend-Checker-Linear-Regression/img/body/thirdv-item-2-img.png" loading="lazy" alt="a struggling trader">
+          </picture>
+          <p>
+            実は、従来のチャート分析は言われているほど信頼できるものではなく、もっと練習したところで解決するわけではありません。  
+            でも、<span class="accent-string">Trend Checker Linear Regression</span> があれば、そんな心配は無用です！  
+            このツールがすべての面倒な作業を代わりにやってくれるので、ストレスなくトレードに集中できます。  
+            まるで、賢くて信頼できる友達が、あなたを一歩一歩サポートしてくれるようなものです！
+          </p>
+        </div>
+        <picture>
+          <img src="/tradingtools/Trend-Checker-Linear-Regression/img/body/scroll-down.jpg" loading="lazy" alt="Arrow indicating to scroll down">
+        </picture>
+        <p class="fade-in solve-text">
+          The Trend Checker Linear Regression<br>があなたの問題を<span class="accent-string">解決</span>します！
+        </p>
+        <div class="parallax-img img01"></div>
+        <div class="thirdv-title">
+          <h2><span class="accent-string">自信</span>を持てるトレードをシンプルに</h2>
+        </div>
+        <div class="thirdv-item-3">
+          <div>
+            <picture>
+              <img src="/tradingtools/Trend-Checker-Linear-Regression/img/body/confident.png" loading="lazy" alt="a confident trader">
+            </picture>
+          </div>
+          <div>
+            <h3><span class="accent-string">トレンドの識別とトレードのタイミング</span></h3>
+            <p>
+              テクニカル分析には大きく分けて2つあることをご存知ですか？  
+              まず一つは、今市場で何が起こっているのかを把握すること — これが現在発生しているトレンドを見極める分析です。  
+              もう一つは、買うべき時や売るべき時のタイミングを図る分析です。  
+              問題なのは、多くのトレーダーがこの2つを混同してしまい、その結果、どんなに賢い戦略でも上手くいかなくなることがあるということです。
+            </p>
+            <h3><span class="accent-string">優位性を手に入れる</span></h3>
+            <p>
+              そこで、 <span class="accent-string">Trend Checker Linear Regression</span> がゲームチェンジャーとなります！
+              トレンドを見つけるのがとても簡単になるので、まるで反則的な優位性を持っているかのような感覚になります。
+              たった数秒で、市場で何が起こっているのかを正確に把握できるようになります。
+              今の市場の明確な状況がわかれば、自分の売買戦略を正しく使うことができ、二度と迷うことはありません。
+              まるで、いつでも正しい方向に導いてくれる親友がいるようなものです。
+              どう思いますか？素晴らしいでしょう？
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Final Call to Action Section -->
+      <section class="cta-section">
+        <h2 class="cta-title">今日からもっと賢く<span class="accent-string">トレードを始めよう！</span></h2>
+        <div class="cta-container">
+          <div class="cta-description">
+            <h3><i class="fa-regular fa-circle-check"></i> 無制限アクセス！</h3>
+            <p>一度きりの支払いで生涯アクセスが手に入ります。サブスクリプションや繰り返しの支払いはなし — ただ純粋なトレンド分析を永遠に利用できます。</p>
+            <h3><i class="fa-regular fa-circle-check"></i> たったの$30.99で3ヶ月間レンタルできます。</h3>
+            <p>たばこを買う程度の値段ですべての機能に完全アクセスでき、簡単にトレンドを見つけ始めることができます。</p>
+            <h3><i class="fa-regular fa-circle-check"></i> 無料でお試しください！</h3>
+            <p>Trend Checkerがあなたのトレードをどのように変えるかを体験してみてください。簡単にトレンドを見つける力を無料で試してみましょう！</p>
+          </div>
+          <div class="cta-buttons">
+            <p class="cta-buttons-top">生涯アクセス！</p>
+            <p class="cta-buttons-price">$76.99</p>
+            <p class="cta-buttons-accessforever">✅ Pay once, use forever!
+              <br>
+              サブスクリプションなし、隠れた料金なし — 強力なトレンド分析に生涯アクセスできます。</p>
+            <p class="cta-buttons-full"><span class="accent-string">永遠</span>の完全アクセス</p>
+            <p class="cta-buttons-Unlimited">無制限のアクセス。</p>
+            <!-- Terms and privacy -->
+            <div class="privacy-policy">
+              <p>当社のツールを使用することで、<a href="/privacy-policy/" class="text-Privacy-Policy">プライバシーポリシー</a>に同意したことになります。</p>
+            </div>
+            <div class="cta-buttons-group">
+              <a class="btn mt cta-buttons-btn" href="https://www.mql5.com/en/market/product/128368?source=Site" target="_blank" rel="noopener noreferrer nofollow">
+                <i class="fa-solid fa-rocket"></i> MT5で始める
+              </a>
+              <a class="btn mt cta-buttons-btn" href="https://www.mql5.com/en/market/product/128100?source=Site" target="_blank" rel="noopener noreferrer nofollow">
+                <i class="fa-solid fa-rocket"></i> MT4で始める
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div>
+        <picture>
+          <img src="/tradingtools/Trend-Checker-Linear-Regression/img/body/offwego.png" loading="lazy" alt="off we go">
+        </picture>
+      </div>
+    </main>
+    <footer class="footer">
+      <picture>
+        <img src="/tradingtools/Trend-Checker-Linear-Regression/img/footer/footer.jpg" loading="lazy" alt="footer logo">
+      </picture>
+      <div class="scroll-to-top">トップへ戻る</div>
+      <small class="footer__copyright">&copy; 2025 ONE TICK</small>
+    </footer>
+    <ul class="fixed-btn">
+      <li>
+        <a class="btn fixed-mt" href="https://www.mql5.com/en/market/product/128368?source=Site" target="_blank" rel="noopener noreferrer nofollow"><i class="fa-solid fa-rocket"></i>&nbsp; MT5で始める</a>
+      </li>
+      <li>
+        <a class="btn fixed-mt" href="https://www.mql5.com/en/market/product/128100?source=Site" target="_blank" rel="noopener noreferrer nofollow"><i class="fa-solid fa-rocket"></i>&nbsp; MT4で始める</a>
+      </li>
+    </ul>
+    <script src="/tradingtools/Trend-Checker-Linear-Regression/js/script.js" differ></script>
+  </body>
+</html>

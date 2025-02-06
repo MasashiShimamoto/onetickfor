@@ -1,0 +1,458 @@
+@charset "UTF-8";
+
+  /* ==========================================================================
+      common
+  ========================================================================== */
+:root {
+    /* font */
+    --top-tiltle-font: sans-serif;
+    --top-copy-font: sans-serif;
+    --CTA-font:sans-serif;
+    --primary-font: sans-serif;
+    /* color */
+    --c-top-tiltle:#15a7f3;
+    --c-default:#eaeaea;
+    --c-bg: #000001;
+    --c-CTA-View-gb:rgba(32, 53, 86, 0.5);
+    --c-footer-bg: #000001;
+    --CTA-background:#2b00ff;
+    /* gradation */
+    --accent-string-gradation:linear-gradient(to right, #ea580c, #4f46e5);
+    --c-card-bg:linear-gradient(to right,#f97316,#d946ef,#4f46e5);
+    --c-sub-copy: rgb(243 244 246);
+    --c-content-text:rgb(156 163 175);
+    --CTA-buttons-top-background:linear-gradient(60deg,#ea580c,#b60cea,#6146e5,#2921b4);
+}
+
+html {
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+body {
+    position: relative;
+    background-color: var(--c-bg);
+    color: var(--c-default);
+    overflow: hidden;
+    font-family: var(--primary-font);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.accent-string{
+    background: var(--accent-string-gradation);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+}
+
+.parallax-img {
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* ==========================================================================
+      shop button	
+  ========================================================================== */
+  .btn {
+    display: inline-block;
+    max-width: 100%;
+    padding: 1vw;
+    text-align: center;
+    border-radius: 999px;
+    transition: all 0.5s;
+    }
+
+  .top-btn {
+    font-size: 1vw;
+    font-family: var(--CTA-font);
+    display: flex;
+    z-index: 99999;
+  }
+
+  .top-btn li{
+    flex: auto;
+  }
+
+  .mt{
+    width: auto;
+    background: var(--CTA-background);
+  }
+
+  .mt:hover, .mt:focus {
+    background-color: var(--c-default);
+    color: var(--CTA-background);
+}
+
+/*追従ボタン*/
+.fixed-btn {
+    position: fixed;
+    right: 0px;
+    bottom: 20px;
+    font-family: var(--CTA-font);
+    font-size: 1vw;
+    writing-mode: vertical-rl;
+    opacity: 0;
+    z-index: 99999;
+    display: flex;
+    transition: opacity 0.5s;
+}
+
+.fixed-btn li{
+    flex: auto;
+    margin:5px 0;
+  }
+
+.fixed-btn.show {
+    opacity: 1;
+}
+
+.fixed-mt {
+    padding: 16px 14px;
+    background: var(--CTA-background);
+    border-radius: 30px 0 0 30px;
+}
+
+/* ==========================================================================
+      scroll down
+  ========================================================================== */
+  .scroll-down {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.scroll-down__arrow {
+    position: absolute;
+    top: -180%;
+    width: 30px;
+    height: 50px;
+    animation: scroll-down__scroll 3s infinite;
+}
+
+.scroll-down__arrow::before,
+.scroll-down__arrow::after {
+    content: "";
+    position: absolute;
+}
+
+.scroll-down__arrow::before {
+    top: 0;
+    height: 100%;
+    width: 1px;
+    background: var(--c-default);
+}
+
+.scroll-down__arrow::after {
+    bottom: 2px;
+    width: 12px;
+    height: 12px;
+    border-bottom: 1px solid var(--c-default);
+    transform: translateX(-50%) rotate(-45deg);
+}
+
+/* Scroll Animation */
+@keyframes scroll-down__scroll {
+    0% {
+        transform: translate(-50%, -50%) translateY(-10px);
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(-50%, -50%) translateY(10px);
+        opacity: 0;
+    }
+}
+
+
+/* ==========================================================================
+      main visual	
+  ========================================================================== */
+.main-visual {  
+    position: relative;
+    z-index: 2;
+}
+
+.main-visual img {
+    width: 100%;
+    height: auto;
+}
+
+.top-container{
+    max-width: 45%;
+    position:absolute;
+    top:0;
+    left:0;
+    padding:8vh 3vw;
+    text-align: center;
+}
+
+.top-title {
+    font-size: 4vw;
+    font-family: var(--top-tiltle-font);
+    color: var(--c-top-tiltle);
+    font-weight: 700;
+}
+
+.copy {
+    margin-top:5vh;
+    font-family: var(--top-copy-font);
+    font-size: 3vw;
+    line-height: 1.3;
+}
+
+.sub-copy{
+    margin:5vh 8vw;
+    font-size: 1.2vw;
+    color:var(--c-sub-copy);
+    opacity: .9;
+}
+
+/* ==========================================================================
+      2nd visual	
+  ========================================================================== */
+  .img02 {
+    background-image: url("https://massive-library-some.on-fleek.app/tradingtools/Trend-Checker-Linear-Regression/img/body/second-v.png");
+    background-size: 100%;
+    height: 75vh;
+    width: 100%;
+}
+
+/* ==========================================================================
+      3rd visual	
+  ========================================================================== */
+  .thirdv {
+    margin: 0 clamp(1rem, 10vh, 30rem);
+    text-align: center;
+  }
+  .thirdv-title {
+    font-weight: 700;
+    font-size: 3rem;
+    padding: clamp(1rem, 15vh, 30rem) 0;
+  }
+  .thirdv h3{
+    opacity: .9;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    margin:4vh 0 1vh 0;
+  }
+  .thirdv p{
+    color:var(--c-content-text);
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .thirdv-item-1{
+    display: flex;
+    text-align: left;
+    gap: 2rem;
+    margin:0 5vw;
+  }
+
+  .thirdv-item-1 p{
+    width:50%;
+  }
+
+  .thirdv-item-2 img{
+    margin: clamp(1rem, 7vh, 30rem) 0;
+  }
+
+  .thirdv-item-2 p{
+    padding: 0 clamp(1rem, 15vw, 30rem);
+  }
+
+  .thirdv-item-3{
+    display: flex;
+    text-align: left;
+    gap: 8vw;
+  }
+
+  .thirdv-item-3 p{
+    width:80%;
+  }
+
+  .thirdv-item-3 img{
+    height:90vh;
+    width:auto;
+    margin: 0 clamp(1rem, 7vw, 30rem);
+    border-radius: 50px;
+  }
+
+  .solve-text span{
+    font-weight: 700;
+  }
+
+  .img01 {
+    background-image: url("https://massive-library-some.on-fleek.app/tradingtools/Trend-Checker-Linear-Regression/img/body/solve.png");
+    background-size: 80%;
+    height: 100vh;
+    width: 100%;
+}
+
+  .demo-video-card-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .demo-video-card {
+    box-shadow: -8px 10px #d347ef4d, -15px 20px #5146e64d;
+    background: var(--c-card-bg);
+    border-radius: 1.5rem;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: flex-end;
+   }
+
+   .demo-video-card video{
+    border-radius: 0.75rem;
+    height: auto;
+    width: 95%;
+    padding-top:2rem;
+   }
+
+  /* ==========================================================================
+      CTA View	
+  ========================================================================== */
+  .cta-section{
+    margin:20vh 18vw;
+  }
+  .cta-title{
+    text-align: center;
+    font-weight: 700;
+    font-size: 3rem;
+  }
+   .cta-container{
+    display: flex;
+    margin-top:8vh;
+    align-items: center;
+   }
+   .cta-description{
+    margin-right:5vw;
+   }
+   .fa-circle-check{
+    font-size: 1.2rem;
+    color:#33f740;
+   }
+   .cta-description h3{
+    opacity: .9;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    margin:4vh 0 1vh 0;
+   }
+   .cta-description p{
+    color:var(--c-content-text);
+    font-size: 0.9rem;
+   }
+
+   .cta-buttons{
+    display: block;
+    text-align: center;
+    background-color: var(--c-CTA-View-gb);
+    border-radius: 10px;
+    padding:6vh;
+   }
+   .cta-buttons-top{
+    background: var(--CTA-buttons-top-background);
+    border-radius: 8px;
+    padding:1vh 0;
+    width:44%;
+    margin-left:28%;
+    font-weight: 600;
+    font-size:0.8rem;
+   }
+   .cta-buttons-price{
+    margin:5vh 0;
+    font-weight: 600;
+    font-size:2.5rem;
+   }
+   .cta-buttons-accessforever{
+    color:var(--c-content-text);
+    font-size: 0.8rem;
+   }
+   .cta-buttons-full{
+    margin:1vh 0;
+    font-weight: 600;
+   }
+   .cta-buttons-Unlimited{
+    color:#00c60d;
+    font-size: 0.8rem;
+   }
+   .privacy-policy{
+    color:rgb(75 85 99);
+    font-size: 0.7rem;
+   }
+   .text-Privacy-Policy{
+    color:rgba(59, 130, 246, .5);
+   }
+   .cta-buttons-group{
+    margin-top:2.5vh;
+   }
+   .cta-buttons-btn{
+    margin:0.8vh 0;
+   }
+
+/* footer
+----------------------------------------- */
+.footer{
+  position: relative;
+  margin-top:10vh;
+}
+.footer img{
+  width:100%;
+  height:auto;
+}
+
+.footer__copyright {
+  display: inline-block;
+  position:absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: var(--en-sans-font);
+}
+
+.scroll-to-top {
+  position:absolute;
+  display: inline-block;
+  cursor: pointer;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.scroll-to-top:hover,
+.scroll-to-top:focus {
+  opacity: 0.7;
+}
