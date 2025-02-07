@@ -1,15 +1,15 @@
 document.addEventListener("DOMContentLoaded", function() {
     let userLang = navigator.language || navigator.userLanguage;
+    let currentUrl = new URL(window.location.href);
     let url = "https://onetickfor.win/tradingtools/Trend-Checker-Linear-Regression/"; 
-    let query = "";
+    let langParam = currentUrl.searchParams.get("lang");
+    let query = null;
 
-    if (userLang.startsWith("ja")) {
-        query = "?lang=ja";
-    } else {
-        query = "";
-    }
-    
-    if (query !== ""){
-        window.location.href = url+query;
+    if (userLang.includes("ja")) {
+        query = "ja";
+    } 
+
+    if (query && query !== langParam) {
+        window.location.href = url + "?lang=" + query;
     }
 });
