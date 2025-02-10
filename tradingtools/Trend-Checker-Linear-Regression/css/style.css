@@ -86,7 +86,9 @@ button {
     width: 100%;
     height: auto;
 }
-
+.language-selector{
+  margin:0 10vw;
+}
 .top-container{
     max-width: 45%;
     position:absolute;
