@@ -10,8 +10,8 @@ if (lang) {
 }
 
 const translations = {
-    en: { url: "./?select=true" },
-    jp: { url: "./?lang=ja&select=true" },
+    '': { url: "./?select=true" },
+    ja: { url: "./?lang=ja&select=true" },
     ru: { url: "./?lang=ru&select=true" },
     zh: { url: "./?lang=zh&select=true" },
     es: { url: "./?lang=es&select=true" },
