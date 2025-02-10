@@ -1,37 +1,16 @@
-document.addEventListener("DOMContentLoaded", function() {
-    let userLang = navigator.language || navigator.userLanguage;
-    let currentUrl = new URL(window.location.href);
-    let url = "https://onetickfor.win/tradingtools/Trend-Checker-Linear-Regression/"; 
-    let lang = currentUrl.searchParams.get("lang");
-    let select = currentUrl.searchParams.get("select");
-    let query = null;
+document.addEventListener("DOMContentLoaded", function () {
+    const languageSelector = document.getElementById("language-selector");
+    const currentUrl = new URL(window.location.href);
+    const url = "https://onetickfor.win/tradingtools/Trend-Checker-Linear-Regression/";
+    const lang = currentUrl.searchParams.get("lang");
+    const select = currentUrl.searchParams.get("select");
 
-    if (userLang.includes("ja")) {
-        query = "ja";
-    }else if (userLang.includes("ru")) {
-        query = "ru";
-    }else if (userLang.includes("zh")) {
-        query = "zh";
-    }else if (userLang.includes("es")) {
-        query = "es";
-    }else if (userLang.includes("pt")) {
-        query = "pt";
-    }else if (userLang.includes("de")) {
-        query = "de";
-    }else if (userLang.includes("ko")) {
-        query = "ko";
-    }else if (userLang.includes("fr")) {
-        query = "fr";
-    }else if (userLang.includes("it")) {
-        query = "it";
-    }else if (userLang.includes("tr")) {
-        query = "tr";
-    }
+    // 言語コードリスト
+    const languages = ["ja", "ru", "zh", "es", "pt", "de", "ko", "fr", "it", "tr"];
+    let userLang = navigator.language.slice(0, 2); // 2文字の言語コード取得
 
-    if (query && query !== lang) {
-        if(!select){
-            window.location.href = url + "?lang=" + query;
-        }
+    if (languages.includes(userLang) && userLang !== lang && !select) {
+        window.location.href = `${url}?lang=${userLang}`;
     }
 
 });
