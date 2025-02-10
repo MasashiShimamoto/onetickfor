@@ -1,4 +1,4 @@
-//let copy = {};
+let copy = {};
 let sub_copy={};
 let linkUrl_mt5={};
 let btn_mt5={};
@@ -26,7 +26,7 @@ let privacy_policy={};
 let last_view_text={};
 
 //英語語: en
-//copy['en'] = '<span class="accent-string">Simplified</span> analysis<br>Stay on top of trends';
+copy['en'] = '<span class="accent-string">Simplified</span> analysis<br>Stay on top of trends';
 sub_copy['en'] = `
 <p>
     This tool uses linear regression and trigonometry to help you spot trends and reversal points in an instant. 
@@ -102,7 +102,7 @@ cta_buttons_full['en']=`<span class="accent-string">Forever</span> full access`;
 privacy_policy['en']=`<p>By using our tools, you agree to our <a href="https://onetickfor.win/privacy-policy/" class="text-Privacy-Policy">Privacy Policy</a>.</p>`;
 last_view_text['en']=`Alright then, ready to go?<br>Have an amazing adventure and make it the best one yet! Off we go!`;
 //日本語: ja
-//copy['ja'] = '<span class="accent-string">シンプルな</span>分析で<br>トレンドを見極める';
+copy['ja'] = '<span class="accent-string">シンプルな</span>分析で<br>トレンドを見極める';
 sub_copy['ja'] = `
 <p>
     このツールは、線形回帰と三角法を活用し、トレンドや反転ポイントを瞬時に見極めるのに役立ちます。
