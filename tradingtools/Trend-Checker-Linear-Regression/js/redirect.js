@@ -26,13 +26,13 @@ document.addEventListener("DOMContentLoaded", function() {
         query = "ja";
     }else if (userLang.includes("ja")) {
         query = "ja";
-    }
+    }*/
 
     if(!userLang.includes(lang)){
         query=lang;
-    }*/
+    }
 
-    if (!select && lang) {
-        window.location.href = url + "?lang=" + lang;
+    if (!select && query) {
+        window.location.href = url + "?lang=" + query;
     }
 });
