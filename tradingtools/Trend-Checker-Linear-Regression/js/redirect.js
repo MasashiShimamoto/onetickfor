@@ -2,7 +2,8 @@ document.addEventListener("DOMContentLoaded", function() {
     let userLang = navigator.language || navigator.userLanguage;
     let currentUrl = new URL(window.location.href);
     let url = "https://onetickfor.win/tradingtools/Trend-Checker-Linear-Regression/"; 
-    let langParam = currentUrl.searchParams.get("lang");
+    let lang = currentUrl.searchParams.get("lang");
+    let select = currentUrl.searchParams.get("select");
     let query = null;
 
     // ユーザーの言語が日本語の場合
@@ -11,8 +12,8 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     // 言語がクエリパラメータと異なる場合、リダイレクト
-    if (query && query !== langParam) {
-        redirect(url + "?lang=" + query);
+    if (!select && query && query !== lang) {
+        window.location.href = url + "?lang=" + query;
     }
 });
 
@@ -34,17 +35,10 @@ const translations = {
 
 // 言語変更時のリダイレクト処理
 languageSelector.addEventListener('change', function() {
-    const selectedLanguage = languageSelector.value;
-    redirect(translations[selectedLanguage].url);
-});
-
-// リダイレクト関数
-function redirect(newUrl) {
     let currentUrl = new URL(window.location.href);
     let select = currentUrl.searchParams.get("select");
-
-    // 'select' パラメータが存在しない場合、リダイレクトを行う
+    const selectedLanguage = languageSelector.value;
     if (!select) {
-        window.location.href = newUrl;
+        window.location.href = translations[selectedLanguage].url;
     }
-}
+});
