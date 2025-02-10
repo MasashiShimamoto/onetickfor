@@ -34,8 +34,4 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    const languageSelector = document.getElementById("language-selector");
-    const selectedOption = languageSelector.options[languageSelector.selectedIndex];
-    const flagCode = selectedOption.getAttribute("data-flag");
-    languageSelector.style.backgroundImage = `url("https://flagcdn.com/w40/${flagCode}.png")`;
 });
