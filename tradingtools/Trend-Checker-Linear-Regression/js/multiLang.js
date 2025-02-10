@@ -1,5 +1,3 @@
-import copy from 'https://onetickfor.win/tradingtools/Trend-Checker-Linear-Regression/js/test.js';
-
 //let copy = {};
 let sub_copy={};
 let linkUrl_mt5={};
