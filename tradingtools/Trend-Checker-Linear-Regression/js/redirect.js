@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
         query = "tr";
     }
 
-    if (!select && query && query !== lang) {
+    if (query && query !== lang) {
         window.location.href = url + "?lang=" + query;
     }
 });
