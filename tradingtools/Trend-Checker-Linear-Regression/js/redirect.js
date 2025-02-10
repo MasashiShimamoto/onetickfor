@@ -6,19 +6,38 @@ document.addEventListener("DOMContentLoaded", function() {
     let select = currentUrl.searchParams.get("select");
     let query = null;
 
-    // ユーザーの言語が日本語の場合
-    if (userLang.includes("ja")) {
+    /*if (userLang.includes("ja")) {
         query = "ja";
+    }else if (userLang.includes("ru")) {
+        query = "ru";
+    }else if (userLang.includes("ja")) {
+        query = "ja";
+    }else if (userLang.includes("ja")) {
+        query = "ja";
+    }else if (userLang.includes("ja")) {
+        query = "ja";
+    }else if (userLang.includes("ja")) {
+        query = "ja";
+    }else if (userLang.includes("ja")) {
+        query = "ja";
+    }else if (userLang.includes("ja")) {
+        query = "ja";
+    }else if (userLang.includes("ja")) {
+        query = "ja";
+    }else if (userLang.includes("ja")) {
+        query = "ja";
+    }*/
+
+    if(!userLang.includes(lang)){
+        query=lang;
     }
 
-    // 言語がクエリパラメータと異なる場合、リダイレクト
-    if (!select && query && query !== lang) {
+    if (!select && query) {
         window.location.href = url + "?lang=" + query;
     }
 });
 
-// 言語選択用のオブジェクト
-const languageSelector = document.getElementById('language-selector');
+/*const languageSelector = document.getElementById('language-selector');
 const translations = {
     en: { url: "./?select=true" },
     jp: { url: "./?lang=ja&select=true" },
@@ -33,7 +52,6 @@ const translations = {
     tr: { url: "./?lang=tr&select=true" }
 };
 
-// 言語変更時のリダイレクト処理
 languageSelector.addEventListener('change', function() {
     let currentUrl = new URL(window.location.href);
     let select = currentUrl.searchParams.get("select");
@@ -41,4 +59,4 @@ languageSelector.addEventListener('change', function() {
     if (!select) {
         window.location.href = translations[selectedLanguage].url;
     }
-});
+});*/
