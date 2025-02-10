@@ -1,4 +1,4 @@
-import {copy} from './test.js';
+import {copy} from 'https://onetickfor.win/tradingtools/Trend-Checker-Linear-Regression/js/test.js';
 
 //let copy = {};
 let sub_copy={};
