@@ -36,27 +36,3 @@ document.addEventListener("DOMContentLoaded", function() {
         window.location.href = url + "?lang=" + query;
     }
 });
-
-/*const languageSelector = document.getElementById('language-selector');
-const translations = {
-    en: { url: "./?select=true" },
-    jp: { url: "./?lang=ja&select=true" },
-    ru: { url: "./?lang=ru&select=true" },
-    zh: { url: "./?lang=zh&select=true" },
-    es: { url: "./?lang=es&select=true" },
-    pt: { url: "./?lang=pt&select=true" },
-    de: { url: "./?lang=de&select=true" },
-    ko: { url: "./?lang=ko&select=true" },
-    fr: { url: "./?lang=fr&select=true" },
-    it: { url: "./?lang=it&select=true" },
-    tr: { url: "./?lang=tr&select=true" }
-};
-
-languageSelector.addEventListener('change', function() {
-    let currentUrl = new URL(window.location.href);
-    let select = currentUrl.searchParams.get("select");
-    const selectedLanguage = languageSelector.value;
-    if (!select) {
-        window.location.href = translations[selectedLanguage].url;
-    }
-});*/
