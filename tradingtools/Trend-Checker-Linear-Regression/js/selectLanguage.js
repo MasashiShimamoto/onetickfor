@@ -36,7 +36,7 @@ const translations = {
 };
 
 // Event listener for language change
-languageSelector.addEventListener('change', function() {
+languageSelector.addEventListener('select', function() {
     const selectedLanguage = languageSelector.value;
     window.location.href = translations[selectedLanguage].url; // Redirect based on selected language
 });
