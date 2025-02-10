@@ -112,7 +112,7 @@ button {
 
 .sub-copy{
     margin:5vh 8vw;
-    font-size: 1.2vw;
+    font-size: 1vw;
     color:var(--c-sub-copy);
     opacity: .9;
 }
