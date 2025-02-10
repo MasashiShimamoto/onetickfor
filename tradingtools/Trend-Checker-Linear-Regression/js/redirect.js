@@ -29,6 +29,8 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     if (query && query !== lang) {
-        window.location.href = url + "?lang=" + query;
+        if(!select){
+            window.location.href = url + "?lang=" + query;
+        }
     }
 });
