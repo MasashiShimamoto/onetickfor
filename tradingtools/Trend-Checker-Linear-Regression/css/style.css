@@ -93,7 +93,7 @@ button {
   text-align: center;
   background-repeat: no-repeat;
   background-size: 2rem;
-  margin-inline: auto;
+  margin-inline: 20px;
   border: 1px solid #dfdede;
   color: #000001;
   font-size: 0.8rem;
