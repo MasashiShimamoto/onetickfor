@@ -111,8 +111,8 @@ button {
 .copy {
     margin-top:5vh;
     font-family: var(--top-copy-font);
-    font-size: 3vw;
-    line-height: 1.3;
+    font-size: 2.7vw;
+    line-height: 1rem;
 }
 
 .sub-copy{
@@ -223,7 +223,7 @@ button {
 .sub-copy{
   margin:3vh 14vw;
   font-size: 2vw;
-  line-height: 1.3;
+  line-height: 1.3rem;
 }
 .top-btn {
   font-size: 2.5vw;
