@@ -91,6 +91,9 @@ button {
   top:5vh;
   right:5vw;
   background-repeat: no-repeat;
+  display: inline-block;
+  background-color: #000001;
+  color: #000001;
 }
 .top-container{
     max-width: 45%;
