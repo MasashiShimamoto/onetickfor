@@ -79,12 +79,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // ボタン・リンクの更新
     const linkElements = [
-        { id: "mt5-link-top", urlKey: "linkUrl_mt5", textKey: "btn_mt5" },
-        { id: "mt4-link-top", urlKey: "linkUrl_mt4", textKey: "btn_mt4" },
-        { id: "mt5-link-bottom", urlKey: "linkUrl_mt5", textKey: "btn_mt5" },
-        { id: "mt4-link-bottom", urlKey: "linkUrl_mt4", textKey: "btn_mt4" },
-        { id: "mt5-link-side", urlKey: "linkUrl_mt5", textKey: "btn_mt5" },
-        { id: "mt4-link-side", urlKey: "linkUrl_mt4", textKey: "btn_mt4" }
+        { id: "mt5-link-top", urlKey: "linkUrl-mt5", textKey: "btn-mt5" },
+        { id: "mt4-link-top", urlKey: "linkUrl-mt4", textKey: "btn-mt4" },
+        { id: "mt5-link-bottom", urlKey: "linkUrl-mt5", textKey: "btn-mt5" },
+        { id: "mt4-link-bottom", urlKey: "linkUrl-mt4", textKey: "btn-mt4" },
+        { id: "mt5-link-side", urlKey: "linkUrl-mt5", textKey: "btn-mt5" },
+        { id: "mt4-link-side", urlKey: "linkUrl-mt4", textKey: "btn-mt4" }
     ];
     linkElements.forEach(({ id, urlKey, textKey }) => {
         let element = document.getElementById(id);
