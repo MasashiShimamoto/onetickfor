@@ -66,10 +66,10 @@ document.addEventListener("DOMContentLoaded", function () {
     // すべての要素を一括更新
     const elementsToUpdate = [
         "copy", "sub-copy", "second-view-text", "thirdv-title", 
-        "thirdv-item-1","thirdv_title2", "thirdv_item_2_text1","problem_text1","problem_text2",
-        "problem_text3","thirdv_item_2_text2","solve_text","encouragement_text","thirdv_title3",
-        "thirdv_item_3","cta-title","cta_description","cta_buttons_top","accessforever","cta_buttons_full",
-        "privacy_policy","last-view-text"
+        "thirdv-item-1","thirdv-title2", "thirdv-item_2-text1","problem-text1","problem-text2",
+        "problem-text3","thirdv-item-2-text2","solve-text","encouragement-text","thirdv-title3",
+        "thirdv-item-3","cta-title","cta-description","cta-buttons-top","accessforever","cta-buttons-full",
+        "privacy-policy","last-view-text"
     ];
     elementsToUpdate.forEach(id => {
         if (document.getElementById(id)) {
