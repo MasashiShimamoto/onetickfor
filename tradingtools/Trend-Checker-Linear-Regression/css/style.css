@@ -90,10 +90,14 @@ button {
   position:absolute;
   top:5vh;
   right:5vw;
+  text-align: center;
   background-repeat: no-repeat;
-  display: inline-block;
-  background-color: #000001;
+  background-size: 2rem;
+  border: 1px solid #dfdede;
   color: #000001;
+  font-size: 0.8rem;
+  padding-left: 25px;
+  background-color: #fff;
 }
 .top-container{
     max-width: 45%;
