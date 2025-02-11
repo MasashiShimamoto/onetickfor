@@ -253,7 +253,8 @@ button {
   font-size: 8vw;
 }
 .sub-copy{
-  font-size: 4vw;
+  font-size: 3vw;
+  line-height: 1rem;
 }
 .top-btn {
   font-size: 3vw;
