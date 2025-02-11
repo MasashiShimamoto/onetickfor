@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let language = params.get("lang") || 'en';
 
     // 外部JSONファイルを非同期で読み込む
-    fetch(`../json/${language}.json`)
+    fetch(`./json/${language}.json`)
         .then(response => response.json())
         .then(translations => {
             // データが読み込まれたら、DOMを更新する
