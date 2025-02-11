@@ -396,6 +396,7 @@ button {
     line-height: 1rem;
     transform: translateY(-30%);
     padding:0 10%;
+    color: #000001;
   }
   .problem-text:nth-of-type(1) {
     background-image: url("https://onetickfor.win/tradingtools/Trend-Checker-Linear-Regression/img/body/problem01.png");
