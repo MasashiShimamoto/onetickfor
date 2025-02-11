@@ -2,8 +2,8 @@ document.addEventListener("DOMContentLoaded", function () {
     // 言語データを格納
     const translations = {
         en: {
-            "copy": `<span class="accent-string">Simplified</span> analysis<br>Stay on top of trends`,
-            "sub_copy": `<p> This tool uses linear regression and trigonometry to help you spot trends and reversal points in an instant. You won’t need to rely on complicated methods like Dow Theory or Granville’s Rules. It’s simple, clear, and designed to you focus on confident trading without the guesswork. </p>`,
+            copy: `<span class="accent-string">Simplified</span> analysis<br>Stay on top of trends`,
+            sub_copy: `<p> This tool uses linear regression and trigonometry to help you spot trends and reversal points in an instant. You won’t need to rely on complicated methods like Dow Theory or Granville’s Rules. It’s simple, clear, and designed to you focus on confident trading without the guesswork. </p>`,
             linkUrl_mt5: `https://www.mql5.com/en/market/product/128368?source=Site`,
             btn_mt5: `<i class="fa-solid fa-rocket"></i> Get started with MT5`,
             linkUrl_mt4: `https://www.mql5.com/en/market/product/128100?source=Site`,
@@ -30,8 +30,8 @@ document.addEventListener("DOMContentLoaded", function () {
             last_view_text: `Alright then, ready to go?<br>Have an amazing adventure and make it the best one yet! Off we go!`
         },
         ja: {
-            "copy": `<span class="accent-string">シンプルな</span>分析で<br>トレンドを見極める`,
-            "sub_copy": `<p>このツールは、線形回帰と三角法を活用し、トレンドや反転ポイントを瞬時に見極めるのに役立ちます。ダウ理論やグランビルの法則のような複雑な手法に頼る必要はありません。シンプルで分かりやすく、迷わず自信を持ってトレードできるように設計されています。</p>`,
+            copy: `<span class="accent-string">シンプルな</span>分析で<br>トレンドを見極める`,
+            sub_copy: `<p>このツールは、線形回帰と三角法を活用し、トレンドや反転ポイントを瞬時に見極めるのに役立ちます。ダウ理論やグランビルの法則のような複雑な手法に頼る必要はありません。シンプルで分かりやすく、迷わず自信を持ってトレードできるように設計されています。</p>`,
             linkUrl_mt5: `https://www.mql5.com/ja/market/product/128368?source=Site`,
             btn_mt5: `<i class="fa-solid fa-rocket"></i> MT5で始める`,
             linkUrl_mt4: `https://www.mql5.com/ja/market/product/128100?source=Site`,
@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // すべての要素を一括更新
     const elementsToUpdate = [
-        "copy", "sub-copy", "second-view-text", "thirdv-title", 
+        copy, sub-copy, second-view-text, "thirdv-title", 
         "thirdv-item-1","thirdv-title2", "thirdv-item_2-text1","problem-text1","problem-text2",
         "problem-text3","thirdv-item-2-text2","solve-text","encouragement-text","thirdv-title3",
         "thirdv-item-3","cta-title","cta-description","cta-buttons-top","accessforever","cta-buttons-full",
