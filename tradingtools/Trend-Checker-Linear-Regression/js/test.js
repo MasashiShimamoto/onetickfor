@@ -1,11 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
-
-    // 言語取得 (デフォルトは "en")
+    // 言語の取得（デフォルトは "en"）
     let params = new URLSearchParams(window.location.search);
     let language = params.get("lang") || 'en';
 
     // 外部JSONファイルを非同期で読み込む
-    fetch(`../json/${language}.json`)
+    fetch(`./translations/${language}.json`)
         .then(response => response.json())
         .then(translations => {
             // データが読み込まれたら、DOMを更新する
@@ -15,16 +14,16 @@ document.addEventListener("DOMContentLoaded", function () {
             console.error("翻訳ファイルの読み込みに失敗しました:", error);
         });
 
-    // すべての要素を一括更新
+    // DOMを更新する関数
     function updateContent(translations) {
-
         const elementsToUpdate = [
             "copy", "sub-copy", "second-view-text", "thirdv-title", 
-            "thirdv-item-1","thirdv-title2", "thirdv-item_2-text1","problem-text1","problem-text2",
-            "problem-text3","thirdv-item-2-text2","solve-text","encouragement-text","thirdv-title3",
-            "thirdv-item-3","cta-title","cta-description","cta-buttons-top","accessforever","cta-buttons-full",
-            "privacy-policy","last-view-text"
+            "thirdv-item-1","thirdv_title2", "thirdv_item_2_text1","problem_text1","problem_text2",
+            "problem_text3","thirdv_item_2_text2","solve_text","encouragement_text","thirdv_title3",
+            "thirdv_item_3","cta-title","cta_description","cta_buttons_top","accessforever","cta_buttons_full",
+            "privacy_policy","last-view-text"
         ];
+
         elementsToUpdate.forEach(id => {
             let element = document.getElementById(id);
             if (element && translations[id]) {
@@ -34,14 +33,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // ボタン・リンクの更新
         const linkElements = [
-            { id: "mt5-link-top", urlKey: "linkUrl-mt5", textKey: "btn-mt5" },
-            { id: "mt4-link-top", urlKey: "linkUrl-mt4", textKey: "btn-mt4" },
-            { id: "mt5-link-bottom", urlKey: "linkUrl-mt5", textKey: "btn-mt5" },
-            { id: "mt4-link-bottom", urlKey: "linkUrl-mt4", textKey: "btn-mt4" },
-            { id: "mt5-link-side", urlKey: "linkUrl-mt5", textKey: "btn-mt5" },
-            { id: "mt4-link-side", urlKey: "linkUrl-mt4", textKey: "btn-mt4" }
+            { id: "mt5-link-top", urlKey: "linkUrl_mt5", textKey: "btn_mt5" },
+            { id: "mt4-link-top", urlKey: "linkUrl_mt4", textKey: "btn_mt4" },
+            { id: "mt5-link-bottom", urlKey: "linkUrl_mt5", textKey: "btn_mt5" },
+            { id: "mt4-link-bottom", urlKey: "linkUrl_mt4", textKey: "btn_mt4" },
+            { id: "mt5-link-side", urlKey: "linkUrl_mt5", textKey: "btn_mt5" },
+            { id: "mt4-link-side", urlKey: "linkUrl_mt4", textKey: "btn_mt4" }
         ];
-        
+
         linkElements.forEach(({ id, urlKey, textKey }) => {
             let element = document.getElementById(id);
             if (element && translations[urlKey] && translations[textKey]) {
