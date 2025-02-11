@@ -87,7 +87,10 @@ button {
     height: auto;
 }
 .language-selector{
-  margin:0 10vw;
+  position:absolute;
+  top:5vh;
+  right:5vw;
+  background-repeat: no-repeat;
 }
 .top-container{
     max-width: 45%;
