@@ -23,6 +23,6 @@
     "cta-buttons-top": "Lifetime access!",
     "accessforever": "No subscriptions, no hidden fees – just lifetime access to powerful trend analysis.",
     "cta-buttons-full": "<span class='accent-string'>Forever</span> full access",
-    "privacy-policy": "<p>By using our tools, you agree to our <a href='/privacy-policy/' class='text-Privacy-Policy'>Privacy Policy</a>.</p>",
+    "privacy-policy": "<p>By using our tools, you agree to our <a href='/privacy-policy/' class='text-Privacy-Policy' id='Privacy-Policy'>Privacy Policy</a>.</p>",
     "last-view-text": "Alright then, ready to go?<br>Have an amazing adventure and make it the best one yet! Off we go!"
     }
