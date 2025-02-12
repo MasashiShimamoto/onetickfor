@@ -23,6 +23,6 @@
     "cta-buttons-top": "终身访问！",
     "accessforever": "没有订阅、没有隐藏费用——只提供强大的趋势分析，终身有效。",
     "cta-buttons-full": "<span class='accent-string'>永久</span> 完整访问",
-    "privacy-policy": "<p>使用我们的工具即表示你同意我们的 <a href='/privacy-policy/' class='text-Privacy-Policy'>隐私政策</a>。</p>",
+    "privacy-policy": "<p>使用我们的工具即表示你同意我们的 <a href='/privacy-policy/' class='text-Privacy-Policy' target='_blank'>隐私政策</a>。</p>",
     "last-view-text": "好了，准备好出发了吗？<br>祝你拥有一段精彩的冒险，让它成为最棒的一次！出发吧！"
 }

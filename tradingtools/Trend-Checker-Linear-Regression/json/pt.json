@@ -23,6 +23,6 @@
     "cta-buttons-top": "Acesso vitalício!",
     "accessforever": "Sem assinaturas, sem taxas ocultas — apenas acesso vitalício à poderosa análise de tendências.",
     "cta-buttons-full": "<span class='accent-string'>Acesso completo</span> para sempre",
-    "privacy-policy": "<p>Ao usar nossas ferramentas, você concorda com nossa <a href='/privacy-policy/' class='text-Privacy-Policy'>Política de Privacidade</a>.</p>",
+    "privacy-policy": "<p>Ao usar nossas ferramentas, você concorda com nossa <a href='/privacy-policy/' class='text-Privacy-Policy' target='_blank'>Política de Privacidade</a>.</p>",
     "last-view-text": "Então, pronto para ir?<br>Tenha uma aventura incrível e faça dela a melhor de todas! Vamos nessa!"
 }

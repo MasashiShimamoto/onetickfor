@@ -23,6 +23,6 @@
     "cta-buttons-top": "평생 액세스!",
     "accessforever": "구독 없음, 숨겨진 요금 없음—강력한 트렌드 분석에 평생 액세스!",
     "cta-buttons-full": "<span class='accent-string'>영원히</span> 전체 액세스",
-    "privacy-policy": "<p>우리 도구를 사용함으로써, 당신은 우리의 <a href='/privacy-policy/' class='text-Privacy-Policy'>개인정보 보호정책</a>에 동의한 것으로 간주됩니다.</p>",
+    "privacy-policy": "<p>우리 도구를 사용함으로써, 당신은 우리의 <a href='/privacy-policy/' class='text-Privacy-Policy' target='_blank'>개인정보 보호정책</a>에 동의한 것으로 간주됩니다.</p>",
     "last-view-text": "자, 준비되셨나요?<br>멋진 여행을 시작하고 최고의 경험을 만들어보세요! 출발합니다!"
 }

@@ -23,6 +23,6 @@
     "cta-buttons-top": "Пожизненный доступ!",
     "accessforever": "Без подписок, без скрытых платежей — просто пожизненный доступ к мощному анализу трендов.",
     "cta-buttons-full": "<span class='accent-string'>Навсегда</span> полный доступ",
-    "privacy-policy": "<p>Используя наши инструменты, вы соглашаетесь с нашими <a href='/privacy-policy/' class='text-Privacy-Policy'>Политикой конфиденциальности</a>.</p>",
+    "privacy-policy": "<p>Используя наши инструменты, вы соглашаетесь с нашими <a href='/privacy-policy/' class='text-Privacy-Policy' target='_blank'>Политикой конфиденциальности</a>.</p>",
     "last-view-text": "Ну что ж, готовы идти?<br>Желаем вам замечательного приключения и пусть оно будет лучшим из всех! Вперёд!"
 }

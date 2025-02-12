@@ -23,6 +23,6 @@
     "cta-buttons-top": "Ömür boyu erişim!",
     "accessforever": "Abonelik yok, gizli ücret yok – güçlü trend analizi için ömür boyu erişim.",
     "cta-buttons-full": "<span class='accent-string'>Sonsuza kadar</span> tam erişim",
-    "privacy-policy": "<p>Araçlarımızı kullanarak, <a href='/privacy-policy/' class='text-Privacy-Policy'>Gizlilik Politikasına</a> onay vermiş oluyorsunuz.</p>",
+    "privacy-policy": "<p>Araçlarımızı kullanarak, <a href='/privacy-policy/' class='text-Privacy-Policy' target='_blank'>Gizlilik Politikasına</a> onay vermiş oluyorsunuz.</p>",
     "last-view-text": "O zaman, hazırsın değil mi?<br>Harika bir macera yaşa ve en iyisi olsun! Hadi gidelim!"
 }

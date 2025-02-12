@@ -23,6 +23,6 @@
     "cta-buttons-top": "Accès à vie !",
     "accessforever": "Pas d’abonnements, pas de frais cachés – juste un accès à vie à une analyse de tendance puissante.",
     "cta-buttons-full": "<span class='accent-string'>Accès</span> complet à vie",
-    "privacy-policy": "<p>En utilisant nos outils, vous acceptez notre <a href='/privacy-policy/' class='text-Privacy-Policy'>politique de confidentialité</a>.</p>",
+    "privacy-policy": "<p>En utilisant nos outils, vous acceptez notre <a href='/privacy-policy/' class='text-Privacy-Policy' target='_blank'>politique de confidentialité</a>.</p>",
     "last-view-text": "Alors, prêt à y aller ?<br>Vivez une aventure incroyable et faites-en la meilleure ! C’est parti !"
 }

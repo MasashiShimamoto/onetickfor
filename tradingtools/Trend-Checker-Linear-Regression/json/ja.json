@@ -23,6 +23,6 @@
     "cta-buttons-top": "生涯アクセス！",
     "accessforever": "サブスクリプションなし、隠れた料金なし — 強力なトレンド分析に生涯アクセスできます。",
     "cta-buttons-full": "<span class='accent-string'>永遠</span>の完全アクセス",
-    "privacy-policy": "<p>当社のツールを使用することで、<a href='/privacy-policy/' class='text-Privacy-Policy'>プライバシーポリシー</a>に同意したことになります。</p>",
+    "privacy-policy": "<p>当社のツールを使用することで、<a href='/privacy-policy/' class='text-Privacy-Policy' target='_blank'>プライバシーポリシー</a>に同意したことになります。</p>",
     "last-view-text": "それでは、準備はいいですか？<br>素晴らしい冒険を楽しんで、これまでで最高のものにしましょう！さあ、出発です！"
     }
