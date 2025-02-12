@@ -34,8 +34,8 @@ document.getElementById("mt4-link-side").addEventListener("click", function() {
         'location': 'side'
     });
 });
-document.getElementById("Privacy-Policy").addEventListener("click", function() {
-    gtag('event', 'Privacy-Policy_click', {
+document.getElementById("PrivacyPolicy").addEventListener("click", function() {
+    gtag('event', 'PrivacyPolicy_click', {
         'button_name': 'Privacy-Policy',
         'location': 'CTA view'
     });
