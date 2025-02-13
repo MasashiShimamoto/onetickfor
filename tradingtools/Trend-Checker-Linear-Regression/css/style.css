@@ -410,12 +410,24 @@ button {
     left: 26%;
 }
   .problem-text:nth-of-type(2) {
-    top: 200px;
-    left: 64px;
+    background-image: url("https://onetickfor.win/tradingtools/Trend-Checker-Linear-Regression/img/body/problem02.png");
+    width: 15%;
+    height: 40%;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 5%;
+    right: 26%;
 }
 .problem-text:nth-of-type(3) {
-  bottom: 64px;
-  right: 64px;
+  background-image: url("https://onetickfor.win/tradingtools/Trend-Checker-Linear-Regression/img/body/problem03.png");
+    width: 15%;
+    height: 40%;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 5%;
+    left: 26%;
 }
 
   .solve-text span{
