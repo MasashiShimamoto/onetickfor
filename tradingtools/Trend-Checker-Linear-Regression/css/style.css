@@ -537,6 +537,10 @@ button {
     .problem{
       background-size: 100%;
     }
+    .problem-text p{
+      font-size: 100%;
+      padding:0 20%;
+    }
     .problem-text:nth-of-type(1) {
       width: 30%;
       height: 55%;
