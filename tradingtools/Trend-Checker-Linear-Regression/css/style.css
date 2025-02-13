@@ -578,6 +578,11 @@ button {
     .thirdv-title {
       font-size: 1.8rem;
     }
+    .problem-text p{
+      font-size: 55%;
+      line-height: 0.8rem;
+      padding:0 15%;
+    }
     .encouragement-text p{
       font-size: 60%;
       line-height: 0.8rem;
