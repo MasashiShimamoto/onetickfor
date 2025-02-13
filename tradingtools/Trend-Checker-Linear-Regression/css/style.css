@@ -537,6 +537,23 @@ button {
     .problem{
       background-size: 100%;
     }
+  .encouragement{
+    background-size: 100%;
+    margin-top:0;
+  }
+  
+  .encouragement-text:nth-of-type(1) {
+    width: 45%;
+    height: 70%;
+    bottom: 12%;
+    left: 0%;
+}
+  }
+
+  @media (max-width: 600px) {
+    .thirdv-title {
+      font-size: 1.8rem;
+    }
     .problem-text p{
       font-size: 55%;
       line-height: 0.8rem;
@@ -560,22 +577,6 @@ button {
     bottom: 7%;
     left: 5%;
   }
-  .encouragement{
-    background-size: 100%;
-    margin-top:0;
-  }
-  .encouragement-text:nth-of-type(1) {
-    width: 45%;
-    height: 70%;
-    bottom: 12%;
-    left: 0%;
-}
-  }
-
-  @media (max-width: 600px) {
-    .thirdv-title {
-      font-size: 1.8rem;
-    }
     .encouragement-text p{
       font-size: 60%;
       line-height: 0.8rem;
