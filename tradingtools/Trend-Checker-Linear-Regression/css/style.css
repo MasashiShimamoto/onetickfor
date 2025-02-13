@@ -538,27 +538,27 @@ button {
       background-size: 100%;
     }
     .problem-text p{
-      font-size: 60%;
+      font-size: 55%;
       line-height: 0.8rem;
-      padding:0 20%;
+      padding:0 10%;
     }
     .problem-text:nth-of-type(1) {
-      width: 30%;
-      height: 55%;
+      width: 35%;
+      height: 60%;
       top: 7%;
-      left: 10%;
+      left: 5%;
   }
     .problem-text:nth-of-type(2) {
-      width: 30%;
-      height: 55%;
+      width: 35%;
+      height: 60%;
       top: 7%;
-      right: 10%;
+      right: 5%;
   }
   .problem-text:nth-of-type(3) {
-    width: 30%;
-    height: 55%;
-      bottom: 7%;
-      left: 10%;
+    width: 35%;
+    height: 60%;
+    bottom: 7%;
+    left: 5%;
   }
   .encouragement{
     background-size: 100%;
