@@ -478,7 +478,7 @@ button {
   .encouragement-text p{
     font-size: 80%;
     line-height: 1rem;
-    transform: translatex(-3%) translateY(-12%);
+    transform: translatex(-3%) translateY(-15%);
     padding:0 25%;
     color: #000001;
   }
