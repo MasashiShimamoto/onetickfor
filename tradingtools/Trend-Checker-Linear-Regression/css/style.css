@@ -393,6 +393,8 @@ button {
     text-align: center;
   }
   .problem-text p{
+    font-size: 90%;
+    line-height: 1rem;
     transform: translateY(-30%);
     padding:0 15%;
     color: #000001;
