@@ -379,7 +379,7 @@ button {
     position: relative;
     background-image: url("https://onetickfor.win/tradingtools/Trend-Checker-Linear-Regression/img/body/thirdv-item-2-img.png");
     width: auto;
-    height: 60vh;
+    height: 70vh;
     background-size: 70%;
     background-position: center;
     background-repeat: no-repeat;
@@ -393,7 +393,7 @@ button {
     text-align: center;
   }
   .problem-text p{
-    font-size: 70%;
+    font-size: 100%;
     line-height: 1rem;
     transform: translateY(-30%);
     padding:0 10%;
