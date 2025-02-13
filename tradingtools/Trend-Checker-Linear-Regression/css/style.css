@@ -576,11 +576,11 @@ button {
     }
     .problem-text p{
       font-size: 60%;
-      line-height: 1rem;
+      line-height: 0.8rem;
     }
     .encouragement-text p{
       font-size: 60%;
-      line-height: 1rem;
+      line-height: 0.8rem;
     }
   }
 
