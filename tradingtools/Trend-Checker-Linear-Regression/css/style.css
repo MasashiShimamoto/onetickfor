@@ -379,8 +379,8 @@ button {
     position: relative;
     background-image: url("https://onetickfor.win/tradingtools/Trend-Checker-Linear-Regression/img/body/thirdv-item-2-img.png");
     width: auto;
-    height: 50vh;
-    background-size: 60%;
+    height: 60vh;
+    background-size: 70%;
     background-position: center;
     background-repeat: no-repeat;
     margin-inline: auto;
@@ -393,7 +393,7 @@ button {
     text-align: center;
   }
   .problem-text p{
-    font-size: 80%;
+    font-size: 70%;
     line-height: 1rem;
     transform: translateY(-30%);
     padding:0 10%;
@@ -406,8 +406,8 @@ button {
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    top: 5%;
-    left: 26%;
+    top: 0%;
+    left: 20%;
 }
   .problem-text:nth-of-type(2) {
     background-image: url("https://onetickfor.win/tradingtools/Trend-Checker-Linear-Regression/img/body/problem02.png");
@@ -416,8 +416,8 @@ button {
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    top: 5%;
-    right: 26%;
+    top: 0%;
+    right: 20%;
 }
 .problem-text:nth-of-type(3) {
   background-image: url("https://onetickfor.win/tradingtools/Trend-Checker-Linear-Regression/img/body/problem03.png");
@@ -426,8 +426,8 @@ button {
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    bottom: 5%;
-    left: 26%;
+    bottom: 0%;
+    left: 20%;
 }
 
   .solve-text span{
