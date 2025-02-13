@@ -479,7 +479,7 @@ button {
     font-size: 80%;
     line-height: 1rem;
     transform: translateY(-30%);
-    padding:0 10%;
+    padding:0 20%;
     color: #000001;
   }
   .encouragement-text:nth-of-type(1) {
