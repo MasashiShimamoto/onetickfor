@@ -617,7 +617,14 @@ button {
     }
     .encouragement{
     height: 30vh;
-  }
+    }
+    .encouragement-text p{
+      font-size: 55%;
+    }
+    .encouragement-text:nth-of-type(1) {
+      width: 50%;
+      height: 75%;
+    }
   }
   /* ==========================================================================
       CTA View	
