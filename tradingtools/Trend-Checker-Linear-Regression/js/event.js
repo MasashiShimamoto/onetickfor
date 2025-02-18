@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const elementsToTrack = [
       "2nd-View-End", "thirdv-title", "thirdv-item-1-End", "thirdv-title2",
       "problem-End", "thirdv-item-2-End", "encouragement-End", "thirdv-title3",
-      "v", "thirdv-item-3-End", "cta-title", "mt4-link-bottom",
+      "thirdv-item-img-End", "thirdv-item-3-End", "cta-title", "mt4-link-bottom",
       "last-view-text", "bottom"
     ];
   
@@ -31,8 +31,7 @@ document.addEventListener("DOMContentLoaded", function() {
           const id = entry.target.id;
           gtag('event', `scroll_to_${id}`, {
             'element_id': id,
-            'event_category': 'scroll',
-            'event_label': location.pathname
+            'page_path': location.pathname
           });
           entry.target.dataset.tracked = "true";
           observer.unobserve(entry.target);
