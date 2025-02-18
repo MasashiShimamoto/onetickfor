@@ -1,16 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Debounce関数の定義
-    function debounce(func, wait) {
-      let timeout;
-      return function(...args) {
-        clearTimeout(timeout);
-        timeout = setTimeout(() => func.apply(this, args), wait);
-      };
-    }
-  
     // ボタンクリックイベントの共通関数
     function setupButtonEvent(buttonId, eventName) {
-      document.getElementById(buttonId)?.addEventListener("click", function() {
+      document.getElementById(buttonId)?.addEventListener("click", () => {
         gtag('event', eventName, {});
       });
     }
@@ -33,28 +24,27 @@ document.addEventListener("DOMContentLoaded", function() {
       "last-view-text", "bottom"
     ];
   
-    // スクロール時に要素の位置をチェックする関数
-    function trackElementView() {
-      const windowHeight = window.innerHeight;
-      elementsToTrack.forEach(id => {
-        const element = document.getElementById(id);
-        if (!element || element.isTracked) return;
-        const rect = element.getBoundingClientRect();
-        if (rect.top < windowHeight && rect.bottom > 0) {
-          element.isTracked = true;
+    // IntersectionObserverを使用してスクロールトラッキング
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && !entry.target.dataset.tracked) {
+          const id = entry.target.id;
           gtag('event', `scroll_to_${id}`, {
             'element_id': id,
             'event_category': 'scroll',
             'event_label': location.pathname
           });
+          entry.target.dataset.tracked = "true";
+          observer.unobserve(entry.target);
         }
       });
-    }
+    }, { threshold: 0.5 });
   
-    // スクロールイベントを登録（debounce付き）
-    window.addEventListener("scroll", debounce(trackElementView, 200));
-    
-    // 初回チェック
-    trackElementView();
+    // 監視開始
+    elementsToTrack.forEach(id => {
+      const element = document.getElementById(id);
+      if (element) {
+        observer.observe(element);
+      }
+    });
   });
-  
