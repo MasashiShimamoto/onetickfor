@@ -106,6 +106,8 @@ button {
     left:0;
     padding:8vh 3vw;
     text-align: center;
+    background-color: rgba(240, 240, 240, 0.5);
+    padding: 0;
 }
 
 .top-title {
@@ -113,8 +115,6 @@ button {
     font-family: var(--top-tiltle-font);
     color: var(--c-top-tiltle);
     font-weight: 700;
-    background-color: rgba(240, 240, 240, 0.5);
-    padding: 0;
 }
 
 .copy {
@@ -123,8 +123,6 @@ button {
     color:var(--c-sub-copy);
     font-size: 2.7vw;
     line-height: 2.5rem;
-    background-color: rgba(240, 240, 240, 0.5);
-    padding: 0;
 }
 
 .sub-copy{
@@ -132,8 +130,6 @@ button {
     font-size: 1vw;
     color:var(--c-sub-copy);
     opacity: .9;
-    background-color: rgba(240, 240, 240, 0.5);
-    padding: 0;
 }
 
 /* CTA */
