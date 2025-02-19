@@ -10,7 +10,7 @@
     --CTA-font:sans-serif;
     --primary-font: sans-serif;
     /* color */
-    --c-top-tiltle:#15a7f3;
+    --c-top-tiltle:#011eaf;
     --c-default:#eaeaea;
     --c-bg: #000001;
     --c-CTA-View-gb:rgba(32, 53, 86, 0.5);
@@ -19,7 +19,7 @@
     /* gradation */
     --accent-string-gradation:linear-gradient(to right, #ea580c, #4f46e5);
     --c-card-bg:linear-gradient(to right,#f97316,#d946ef,#4f46e5);
-    --c-sub-copy: rgb(243 244 246);
+    --c-sub-copy: #000001;
     --c-content-text:rgb(156 163 175);
     --CTA-buttons-top-background:linear-gradient(60deg,#ea580c,#b60cea,#6146e5,#2921b4);
 }
@@ -118,6 +118,7 @@ button {
 .copy {
     margin-top:5vh;
     font-family: var(--top-copy-font);
+    color:var(--c-sub-copy);
     font-size: 2.7vw;
     line-height: 2.5rem;
 }
