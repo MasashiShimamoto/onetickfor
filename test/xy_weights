@@ -1,0 +1,42 @@
+{
+  "quotePairs": [
+    {"symbol": "EURUSD", "weight": 0.215382985485751},
+    {"symbol": "USDJPY", "weight": 0.145354380760674},
+    {"symbol": "USDCNY", "weight": 0.0827418158703253},
+    {"symbol": "GBPUSD", "weight": 0.0774446445598051},
+    {"symbol": "USDCAD", "weight": 0.0535014302362538},
+    {"symbol": "AUDUSD", "weight": 0.0494755800402585},
+    {"symbol": "USDCHF", "weight": 0.0494755800402585},
+    {"symbol": "USDHKD", "weight": 0.0367623688950101},
+    {"symbol": "USDSGD", "weight": 0.0227778366352368},
+    {"symbol": "USDINR", "weight": 0.0191757601440831},
+    {"symbol": "USDKRW", "weight": 0.0174806653247166},
+    {"symbol": "MXNUSD", "weight": 0.0148320796694565},
+    {"symbol": "NZDUSD", "weight": 0.0125013242928276},
+    {"symbol": "USDTWD", "weight": 0.012077550587986},
+    {"symbol": "USDSEK", "weight": 0.0108062294734612},
+    {"symbol": "USDBRL", "weight": 0.00911113465409471},
+    {"symbol": "USDNOK", "weight": 0.0087933043754635},
+    {"symbol": "USDZAR", "weight": 0.00752198326093866},
+    {"symbol": "USDTRY", "weight": 0.00476745417946816},
+    {"symbol": "USDPLN", "weight": 0.00466151075325776},
+    {"symbol": "USDMYR", "weight": 0.00137726454073525}
+  ]
+  ,
+  "basePairs": [
+    {"symbol": "EURUSD", "weight": 0.215382985485751},
+    {"symbol": "EURGBP", "weight": 0.0179044390295582},
+    {"symbol": "EURJPY", "weight": 0.01048839919483},
+    {"symbol": "EURCHF", "weight": 0.0102765123424092},
+    {"symbol": "EURSEK", "weight": 0.00413179362220574},
+    {"symbol": "EURAUD", "weight": 0.00328424621252251},
+    {"symbol": "EURNOK", "weight": 0.00328424621252251},
+    {"symbol": "EURPLN", "weight": 0.0028604725076809},
+    {"symbol": "EURDKK", "weight": 0.00275452908147049},
+    {"symbol": "EURHUF", "weight": 0.00243669880283928},
+    {"symbol": "EURCAD", "weight": 0.00233075537662888},
+    {"symbol": "EURCNY", "weight": 0.00116537768831444},
+    {"symbol": "EURBGN", "weight": 0.000317830278631211}
+  ]
+  
+}
